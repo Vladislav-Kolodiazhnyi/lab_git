@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Команди Git</title>
+        <meta charset="UTF-8">
+        <style>
+            body
+            {
+                font-family: Arial;
+                margin: 0;
+                padding: 0;
+            }
+            header
+            {
+                background-color: #41a5f6;
+                border-bottom: 3px solid red;
+                padding: 15px;
+            }
+            h1
+            {
+                display: inline;
+                color: black;
+                margin-right: 75%;
+                font-size: 20px;
+            }
+            .menu
+            {
+                color: black;
+                text-decoration: none;
+                font-size: 14px;
+                margin-left: 20px;
+            }
+            .menu:hover
+            {
+                color: grey;
+            }
+            main
+            {
+                display: grid;  
+                height: 86.5vh;
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+                gap: 20px;
+                padding: 5px 50px;
+            }
+            .block1 { grid-column: 1 / 2; grid-row: 1 / 2; }
+            .block2 { grid-column: 2 / 3; grid-row: 1 / 2; }
+            .block3 { grid-column: 3 / 4; grid-row: 1 / 2; }
+            .block4 { grid-column: 4 / 5; grid-row: 1 / 2; }
+            h2
+            {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+            p
+            {
+                opacity: 0.65;
+                margin-bottom: 3px;
+                font-size: 13px;
+            }
+            pre
+            {
+                font-weight: bold;
+                margin-top: 3px;
+                font-size: 13px;
+            }
+            footer
+            {
+                text-align: center;
+                padding: 5px;
+                background-color: #263137;
+                color: white;
+                font-size: small;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Мій особистий блог</h1>
+            <a class="menu" href="">Вхід</a>
+            <a class="menu" href="">Реєстрація</a>
+        </header>
+        <main>
+            <div class="block1">
+                <h2 style="color: #6daed0;">Create a Repository</h2>
+                <p>From scratch -- Create a new local<br>repository</p>
+                <pre>$ git init [project name]</pre>
+                <p>Download from an existing repository</p>
+                <pre>$ git clone my_url</pre>
+                <h2 style="color: #538aa4;">Observe your Repository</h2>
+                <p>List new or modified files not yet<br>committed</p>
+                <pre>$ git status</pre>
+                <p>Show the changes to files not yet staged</p>
+                <pre>$ git diff</pre>
+                <p>Show the changes to staged files</p>
+                <pre>$ git diff --cached</pre>
+                <p>Show all staged and unstaged<br>file changes</p>
+                <pre>$ git diff HEAD</pre>
+                <p>Show the changes between two<br>commit ids</p>
+                <pre>$ git diff commitl commit2</pre>
+                <p>List the change dates and authors<br>for a fille</p>
+                <pre>$ git blame [file]</pre>
+                <p>Show the file changes for a commit<br>id and/or file</p>
+                <pre>$ git show [commit] : [file]</pre>
+                <p>Show full change history</p>
+                <pre>$ git log</pre>
+                <p>Show change history for file/directory<br>including diffs</p>
+                <pre>$ git log -p [file/directory]</pre>
+            </div>
+            <div class="block2">
+                <h2 style="color: #94cb48;">Working with Branches</h2>
+                <p>List all local branches</p>
+                <pre>$ git branch</pre>
+                <p>List all branches, local and remote</p>
+                <pre>$ git branch -av</pre>
+                <p>Switch to a branch, my branch,<br>and update working directory</p>
+                <pre>$ git checkout my_branch</pre>
+                <p>Create a new branch called new_branch</p>
+                <pre>$ git branch new_branch</pre>
+                <p>Delete the branch called my branch</p>
+                <pre>$ git branch -d my_branch</pre>
+                <p>Merge branch a into branch_b</p>
+                <pre>$ git checkout branch_b<br>$ git merge branch_a</pre>
+                <p>Tag the current commit</p>
+                <pre>$ git tag my_tag</pre>
+            </div>
+            <div class="block3">
+                <h2 style="color: #689929;">Make a change</h2>
+                <p>Stages the file, ready for commit</p>
+                <pre>$ git add [file]</pre>
+                <p>Stage all changed files, ready for commit</p>
+                <pre>$ git add .</pre>
+                <p>Commit all staged files to versioned history</p>
+                <pre>$ git commit -m "commit message"</pre>
+                <p>Commit all your tracked files to<br>versioned history</p>
+                <pre>Sgit commit -an "commit message"</pre>
+                <p>Unstages file, keeping the file changes</p>
+                <pre>$ git reset [file]</pre>
+                <p>Revert everything to the last commit</p>
+                <pre>$ git reset --hard</pre>
+            </div>
+            <div class="block4">
+                <h2 style="color: #ef693a;">Synchronize</h2>
+                <p>Get the latest changes from origin<br>(no merge)</p>
+                <pre>$ git fetch</pre>
+                <p>Fetch the latest changes from origin<br>and merge</p>
+                <pre>$ git pull</pre>
+                <p>Fetch the latest changes from origin<br>and rebase</p>
+                <pre>$ git pull --rebase</pre>
+                <p>Push local changes to the origin</p>
+                <pre>$ git push</pre>
+                <h2 style="color: #b5421a;">Finally!</h2>
+                <p>When in doubt, use git help</p>
+                <pre>$ git command --help</pre>
+                <p>Or visit <a href="https://training.github.com/">https://training.github.com/</a><br>for official GitHub training</p>
+            </div>
+        </main>
+        <footer>
+            <p>© Всі права захищені.</p>
+        </footer>
+    </body>
+</html>

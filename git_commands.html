@@ -45,6 +45,7 @@
             }
             .block1 { grid-column: 1 / 2; grid-row: 1 / 2; }
             .block2 { grid-column: 2 / 3; grid-row: 1 / 2; }
+            .block3 { grid-column: 3 / 4; grid-row: 1 / 2; }
             h2
             {
                 margin-top: 5px;
@@ -122,6 +123,21 @@
                 <pre>$ git checkout branch_b<br>$ git merge branch_a</pre>
                 <p>Tag the current commit</p>
                 <pre>$ git tag my_tag</pre>
+            </div>
+            <div class="block3">
+                <h2 style="color: #689929;">Make a change</h2>
+                <p>Stages the file, ready for commit</p>
+                <pre>$ git add [file]</pre>
+                <p>Stage all changed files, ready for commit</p>
+                <pre>$ git add .</pre>
+                <p>Commit all staged files to versioned history</p>
+                <pre>$ git commit -m "commit message"</pre>
+                <p>Commit all your tracked files to<br>versioned history</p>
+                <pre>Sgit commit -an "commit message"</pre>
+                <p>Unstages file, keeping the file changes</p>
+                <pre>$ git reset [file]</pre>
+                <p>Revert everything to the last commit</p>
+                <pre>$ git reset --hard</pre>
             </div>
         </main>
         <footer>

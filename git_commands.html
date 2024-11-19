@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Команди Git</title>
+        <meta charset="UTF-8">
+        <style>
+            body
+            {
+                font-family: Arial;
+                margin: 0;
+                padding: 0;
+            }
+            header
+            {
+                background-color: #41a5f6;
+                border-bottom: 3px solid red;
+                padding: 15px;
+            }
+            h1
+            {
+                display: inline;
+                color: black;
+                margin-right: 75%;
+                font-size: 20px;
+            }
+            .menu
+            {
+                color: black;
+                text-decoration: none;
+                font-size: 14px;
+                margin-left: 20px;
+            }
+            .menu:hover
+            {
+                color: grey;
+            }
+            main
+            {
+                display: grid;  
+                height: 86.5vh;
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+                gap: 20px;
+                padding: 5px 50px;
+            }
+            .block1 { grid-column: 1 / 2; grid-row: 1 / 2; }
+            h2
+            {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+            p
+            {
+                opacity: 0.65;
+                margin-bottom: 3px;
+                font-size: 13px;
+            }
+            pre
+            {
+                font-weight: bold;
+                margin-top: 3px;
+                font-size: 13px;
+            }
+            footer
+            {
+                text-align: center;
+                padding: 5px;
+                background-color: #263137;
+                color: white;
+                font-size: small;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Мій особистий блог</h1>
+            <a class="menu" href="">Вхід</a>
+            <a class="menu" href="">Реєстрація</a>
+        </header>
+        <main>
+            <div class="block1">
+                <h2 style="color: #6daed0;">Create a Repository</h2>
+                <p>From scratch -- Create a new local<br>repository</p>
+                <pre>$ git init [project name]</pre>
+                <p>Download from an existing repository</p>
+                <pre>$ git clone my_url</pre>
+            </div>
+        </main>
+        <footer>
+            <p>© Всі права захищені.</p>
+        </footer>
+    </body>
+</html>

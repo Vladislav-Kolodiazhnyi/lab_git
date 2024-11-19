@@ -44,6 +44,7 @@
                 padding: 5px 50px;
             }
             .block1 { grid-column: 1 / 2; grid-row: 1 / 2; }
+            .block2 { grid-column: 2 / 3; grid-row: 1 / 2; }
             h2
             {
                 margin-top: 5px;
@@ -104,6 +105,23 @@
                 <pre>$ git log</pre>
                 <p>Show change history for file/directory<br>including diffs</p>
                 <pre>$ git log -p [file/directory]</pre>
+            </div>
+            <div class="block2">
+                <h2 style="color: #94cb48;">Working with Branches</h2>
+                <p>List all local branches</p>
+                <pre>$ git branch</pre>
+                <p>List all branches, local and remote</p>
+                <pre>$ git branch -av</pre>
+                <p>Switch to a branch, my branch,<br>and update working directory</p>
+                <pre>$ git checkout my_branch</pre>
+                <p>Create a new branch called new_branch</p>
+                <pre>$ git branch new_branch</pre>
+                <p>Delete the branch called my branch</p>
+                <pre>$ git branch -d my_branch</pre>
+                <p>Merge branch a into branch_b</p>
+                <pre>$ git checkout branch_b<br>$ git merge branch_a</pre>
+                <p>Tag the current commit</p>
+                <pre>$ git tag my_tag</pre>
             </div>
         </main>
         <footer>
